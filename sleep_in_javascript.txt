@@ -1,0 +1,45 @@
+
+<html>
+<body>
+ <img id="im1" src="brooke-lark-08bOYnH_r_E-unsplash.jpg" style="max-width: 600px; ">
+
+
+
+<script>
+
+
+function sleep(milliseconds) {  
+      return new Promise(resolve => setTimeout(resolve, milliseconds));  
+   }  
+   async function fun() {  
+    
+      for (let i = 1; i <=10 ; i++) {          
+         await sleep(2000); 
+          
+    if (i == 0)
+    document.getElementById("im1").src="brooke-lark-08bOYnH_r_E-unsplash.jpg.jpg";
+
+    if (i == 1)
+    document.getElementById("im1").src="brooke-lark-HlNcigvUi4Q-unsplash.jpg";
+
+    if (i == 2){
+    document.getElementById("im1").src="lily-banse--YHSwy6uqvk-unsplash.jpg";
+    i=0;}
+   
+      } 
+      
+      
+    
+   }  
+   fun();
+
+
+
+
+
+
+
+</script> 
+
+</body>
+</html>
